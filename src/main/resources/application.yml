@@ -1,0 +1,75 @@
+person:
+  boss:
+    true
+  birth:
+    2020/12/02 01:03:00
+  age:
+    18
+  pet:
+    name:
+      dog
+    weight:
+      100.01
+  interests:
+    - 篮球
+    - 足球
+    - 排球
+    - 跳舞
+    - 做爱
+  animal:
+    - 小狗
+    - 小猫
+    - 少女
+    - 母狗
+  score:
+    english:
+      30
+    math:
+      40
+    chinese:
+      50
+  salarys:
+    [1000,20000,30000]
+#    - 10000
+#    - 20000
+#    - 30000.10
+  allPets:
+    dogs:
+      - name:
+          wangcai
+        weight:
+          80
+      - name:
+          shagou
+        weight:
+          90
+    cats:
+      - name:
+          zhaocai
+        weight:
+          50
+      - name:
+          shamao
+        weight:
+          60
+  user-name: wangwu
+
+server:
+  port: 8088
+#spring:
+  mvc:
+    static-path-pattern: /res/**
+#
+#  web:
+#    resources:
+#      static-locations: classpath:/pic/
+spring:
+  thymeleaf:
+    cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    contentnegotiation:
+      favor-parameter: true
+
